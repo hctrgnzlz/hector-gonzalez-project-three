@@ -1,0 +1,196 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .cntr {
+    &__title {
+      font-size: 130px;
+      line-height: 100px;
+    }
+    &__subtitle {
+      font-size: 50px;
+    }
+  }
+  input[type="text"] {
+    font-size: 30px;
+  }
+  input {
+    width: 300px;
+  }
+  .submit {
+    width: 300px;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .cntr {
+    &__title {
+      font-size: 100px;
+      line-height: 80px;
+    }
+    &--middle {
+      position: relative;
+      height: 100vd;
+
+      &__left {
+        // display: none;
+        width: 0%;
+      }
+      &__logo {
+        display: none;
+      }
+      &__msg {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    &__gallery {
+      &__item {
+        width: calc(100% / 2 - 20px);
+        margin: 0 10px 10px;
+      }
+      &__btn {
+        width: 70%;
+        margin: 20px 0 20px 0;
+      }
+    }
+    &--bottom {
+      &__header {
+        height: 20vh;
+
+        &__logo {
+          max-width: 15%;
+          margin-left: 20px;
+        }
+      }
+      &__title {
+        font-size: 23px;
+      }
+    }
+  }
+  .submit {
+    width: 300px;
+  }
+  .return,
+  .about {
+    position: absolute;
+    top: 450px;
+    left: 130px;
+    width: 50%;
+    font-size: 20px;
+  }
+  .about {
+    margin-top: 80px;
+  }
+
+  .return {
+    margin-top: 50px;
+  }
+}
+
+.wu-name {
+  font-size: 70px;
+  line-height: 60px;
+}
+
+.user-text {
+  font-size: 25px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .cntr {
+    &__title {
+      font-size: 95px;
+      line-height: 75px;
+      color: #ffffff;
+    }
+    &__subtitle {
+      font-size: 50px;
+      color: #ffffff;
+      margin-bottom: 40px;
+    }
+    &__left {
+      width: 100%;
+      background-image: url("../assets/black.png");
+      background-position: center;
+      background-size: 120%;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+    &__right {
+      display: none;
+    }
+    &--middle {
+      position: relative;
+
+      &__left {
+        // display: none;
+        width: 0%;
+      }
+      &__logo {
+        display: none;
+      }
+      &__msg {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    &__gallery {
+      &__item {
+        width: calc(70% / 1 - 20px);
+        margin: 0 10px 20px;
+      }
+      &__btn {
+        width: 80%;
+        margin: 20px 0 20px 0;
+      }
+    }
+
+    &--bottom {
+      &__header {
+        height: 20vh;
+
+        &__logo {
+          max-width: 17%;
+          margin-left: 20px;
+        }
+      }
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
+  .return,
+  .about {
+    position: absolute;
+    top: 450px;
+    left: 130px;
+    width: 50%;
+    font-size: 15px;
+  }
+  .about {
+    margin-top: 80px;
+  }
+
+  .wu-name {
+    font-size: 65px;
+    line-height: 60px;
+  }
+
+  .user-text {
+    font-size: 25px;
+  }
+
+  input[type="text"] {
+    color: #000000;
+  }
+
+  input[type="text"],
+  textarea {
+    background-color: #fdc503;
+    margin-bottom: 0px;
+  }
+  .submit {
+    width: 300px;
+  }
+}

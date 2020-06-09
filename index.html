@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enter the Wu-Tang</title>
+  <link href="https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <!-- start of top section -->
+  <div class="cntr cntr--top id=" section-1">
+    <div class="cntr__left">
+      <h1 class="cntr__title">Enter<br> the<br> Wu-Tang</h1>
+      <p class="cntr__subtitle">(36 Chambers)</p>
+      <input type="text" id="userName" class="userName" placeholder="Enter your name" />
+      <button id="submit" class="submit" data-target="section-2">En garde</button>
+    </div>
+    <br>
+    <div class="cntr__right">
+      <img src="./assets/black.png" class="cntr__right__logo" alt="Wu-Tang Clan logo" />
+    </div>
+  </div>
+  <!-- end of top section -->
+
+  <!-- start of middle section -->
+  <div class="cntr cntr--middle cntr--hide" id="section-2">
+    <div class="cntr--middle__left">
+      <img src="./assets/yellow2.png" class="cntr--middle__logo" alt="" />
+      <br>
+      <button id="about" class="about" data-target="section-3">Who is the Wu?</button>
+      <button id="return" class="return" data-target="section-1">Return</button>
+    </div>
+    <!-- message automated by javascript -->
+    <div class="cntr--middle__msg">
+    </div>
+  </div>
+  <!-- end of middle section -->
+
+  <!-- start bottom section -->
+  <div class="cntr cntr--bottom cntr--hide" id="section-3">
+    <!-- start of bottom header -->
+    <div class="cntr--bottom__header">
+      <img src="./assets/yellow.png" class="cntr--bottom__header__logo">
+      <p class="cntr--bottom__title">From the slums of Shaolin emerge nine warriors...</p>
+    </div>
+    <!-- start of gallery -->
+    <div class="cntr__gallery">
+      <div class="wrapper">
+        <ul class="cntr__gallery__list">
+
+          <li class="cntr__gallery__item">
+            <img src="./assets/meth.png" class="cntr__gallery__img" alt="Method Man">
+            <div class="cntr__gallery--overlay">
+              <h1 class="cntr__gallery--overlay--title">Method Man</h1>
+              <p class="cntr__gallery--overlay--text">36 different methods to his style.</p>
+            </div>
+
+          <li class="cntr__gallery__item">
+            <img src="./assets/rza.png" class="cntr__gallery__img" alt="The RZA">
+            <div class="cntr__gallery--overlay">
+              <h1 class="cntr__gallery--overlay--title">The Rza</h1>
+              <p class="cntr__gallery--overlay--text">Razor sharp, always on point.</p>
+            </div>
+
+          <li class="cntr__gallery__item">
+            <img src="./assets/dirty.png" class="cntr__gallery__img" alt="Ol' Dirty Bastard aka Osiris.">
+            <div class="cntr__gallery--overlay">
+              <h1 class="cntr__gallery--overlay--title">Ol' Dirty Bastard (R.I.P.)</h1>
+              <p class="cntr__gallery--overlay--text">No father to his style.</p>
+            </div>
+
+          <li class="cntr__gallery__item">
+            <img src="./assets/rae.png" class="cntr__gallery__img" alt="Shallah Raekwon/The Chef">
+            <div class="cntr__gallery--overlay">
+              <h1 class="cntr__gallery--overlay--title">Raekwon</h1>
+              <p class="cntr__gallery--overlay--text">The Chef. Cookin' up the exotic realness.</p>
+            </div>
+
+          <li class="cntr__gallery__item">
+            <img src="./assets/gza.png" class="cntr__gallery__img" alt="The GZA/Genius.">
+            <div class="cntr__gallery--overlay">
+              <h1 class="cntr__gallery--overlay--title">The GZA</h1>
+              <p class="cntr__gallery--overlay--text">The Genius.Wu-Tang forms like voltron, GZA happens to be the head.
+              </p>
+            </div>
+
+          <li class="cntr__gallery__item">
+            <img src="./assets/ghost.png" class="cntr__gallery__img" alt="Ghostface Killah">
+            <div class="cntr__gallery--overlay">
+              <h1 class="cntr__gallery--overlay--title">Ghostface Killah</h1>
+              <p class="cntr__gallery--overlay--text">Now you see him... now you don't.</p>
+            </div>
+
+          <li class="cntr__gallery__item">
+            <img src="./assets/ugod.png" class="cntr__gallery__img" alt="U-God/Baby-U">
+            <div class="cntr__gallery--overlay">
+              <h1 class="cntr__gallery--overlay--title">U-God</h1>
+              <p class="cntr__gallery--overlay--text">Psychopathic thinker. 4-Bar Killer.</p>
+            </div>
+
+          <li class="cntr__gallery__item">
+            <img src="./assets/deck.png" class="cntr__gallery__img" alt="Inspectah Deck">
+            <div class="cntr__gallery--overlay">
+              <h1 class="cntr__gallery--overlay--title">Inspectah Deck</h1>
+              <p class="cntr__gallery--overlay--text">Sit back and watch your play yourself... Then take your ass to
+                court.</p>
+            </div>
+
+          <li class="cntr__gallery__item">
+            <img src="./assets/masta.jpg" class="cntr__gallery__img" alt="Masta Killa">
+            <div class="cntr__gallery--overlay">
+              <h1 class="cntr__gallery--overlay--title">Masta Killa</h1>
+              <p class="cntr__gallery--overlay--text">aka Noodles High Chief, Jamel Irief.</p>
+            </div>
+
+          </li>
+          <img src="./assets/wuWorld.png" alt="Wu-Tang World Wide Logo and home button" title="RETURN HOME"
+            class="cntr__gallery__btn" data-target="section-1">
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- audio files start -->
+  <audio src="./assets/wutangstyle.mp3" class="cntr--hide" preload="auto" type="audio/mpeg"></audio>
+  <audio src="./assets/dangerous.mp3" class="cntr--hide" preload="auto" type="audio/mpeg"></audio>
+  <audio src="./assets/swordstyle.mp3" class="cntr--hide" preload="auto" type="audio/mpeg"></audio>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
