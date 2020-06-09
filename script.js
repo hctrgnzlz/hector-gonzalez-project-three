@@ -134,33 +134,37 @@ $(function () {
     let wuName = createName();
     //create specific names for certain names that are typed in
 
-    if (userName == "colin") {
+    if (userName == "Colin") {
       wuName = "Marley Protectah";
     }
 
-    if (userName == "owen") {
+    if (userName == "Owen") {
       wuName = "Survivor Slayah";
     }
 
-    if (userName == "darshana") {
+    if (userName == "Darshana") {
       wuName = "Hufflepuff Hustlah";
     }
 
-    if (userName == "esther") {
+    if (userName == "Esther") {
       wuName = "Orbiz Bandit";
     }
 
-    if (userName == "hector") {
+    if (userName == "Hector") {
       wuName = "Tha Architect";
     }
-    if (userName == "donald trump") {
+    if (userName == "Donald Trump") {
       wuName = "Orange Clown";
     }
-    if (userName == "donald glover") {
+    if (userName == "Donald Glover") {
       wuName = "Childish Gambino";
     }
-    if (userName == "dexter") {
+    if (userName == "Dexter") {
       wuName = "Big Chungus";
+    }
+
+    if (userName == "Katrina") {
+      wuName = "Mother of Dragons";
     }
 
     //display users name and new generated name by using .html() method

@@ -736,6 +736,9 @@ button:disabled {
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin-top: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .cntr__gallery__item {
     width: calc(70% / 1 - 20px);
@@ -758,10 +761,11 @@ button:disabled {
   .return,
   .about {
     position: absolute;
-    top: 350px;
+    top: 450px;
     left: 130px;
     width: 50%;
-    font-size: 15px;
+    font-size: 20px;
+    padding: 0;
   }
   .wu-name {
     font-size: 65px;
