@@ -718,6 +718,7 @@ button:disabled {
   }
   .cntr--middle {
     position: relative;
+    height: 100vh;
   }
   .cntr--middle__left {
     width: 0%;
@@ -728,6 +729,13 @@ button:disabled {
   .cntr--middle__msg {
     width: 100%;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 40px;
   }
   .cntr__gallery__item {
     width: calc(70% / 1 - 20px);
@@ -750,13 +758,10 @@ button:disabled {
   .return,
   .about {
     position: absolute;
-    top: 450px;
+    top: 350px;
     left: 130px;
     width: 50%;
     font-size: 15px;
-  }
-  .about {
-    margin-top: 80px;
   }
   .wu-name {
     font-size: 65px;
