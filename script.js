@@ -45,7 +45,7 @@ const lastName = [
   "Gambino",
   "Capo",
   "Ninja",
-  "Wonderer",
+  "Wanderer",
   "Man",
   "Assasin",
   "Butcher",
@@ -113,6 +113,7 @@ $(function () {
   $(".submit").on("click", function (event) {
     event.preventDefault();
     audTag[0].play();
+
     //use jquery to remove hidden class, displaying the actual section
     $(".cntr--middle").removeClass("cntr--hide");
     const hash = $(this).attr("data-target"),
